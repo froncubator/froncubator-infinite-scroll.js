@@ -52,8 +52,13 @@ Vue.js
 const infiniteScroll = new InfiniteScroll()
 ```
 
-## Vue.js or Angular
+## Notice 2
 
-If you use Vue.js or Angular don't forget to make "infiniteScroll.removeListener()" on destroy
+If you use Vue.js or Angular don't forget to make "infiniteScroll.removeListener()" on destroy.
+If you want dynamically add or remove columns you must remove listener and create new infiniteScroll after each changing number of columns.
+```javascript
+infiniteScroll.removeListener()
+infiniteScroll = new InfiniteScroll()
+```
 
 Froncubator Infinite Scroll is freely distributable under the terms of the [MIT license](https://github.com/froncubator/froncubator-infinite-scroll.js/blob/master/LICENSE).
