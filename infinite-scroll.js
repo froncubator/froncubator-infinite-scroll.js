@@ -16,6 +16,10 @@ class InfiniteScroll {
         }
     }
 
+    removeListener() {
+        window.removeEventListener('scroll', () => {this._infiniteScroll()});
+    }
+
     _startInfiniteScroll() {
         for (let i = 0; i < this.columns; i++) {
             this._createElements(i)
