@@ -61,4 +61,8 @@ infiniteScroll.removeListener()
 infiniteScroll = new InfiniteScroll()
 ```
 
+## Test
+
+Try it on [JSFiddle](https://jsfiddle.net/occurs/c8kcn5rz/5/)
+
 Froncubator Infinite Scroll is freely distributable under the terms of the [MIT license](https://github.com/froncubator/froncubator-infinite-scroll.js/blob/master/LICENSE).
