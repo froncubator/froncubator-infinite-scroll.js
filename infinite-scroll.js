@@ -100,6 +100,14 @@ class InfiniteScroll {
     }
 
     init() {
+        try {
+            let win = window
+            if (!win.froncubatorInfiniteScroll) {
+                win.froncubatorInfiniteScroll = true
+            }
+        } catch(err) {
+            console.log('Global variable', err)
+        }
         this.columns = document.getElementsByClassName("infinite-wrapper").length
         if (this.columns != document.getElementsByClassName("infinite-scroll").length) {
             console.error('Error in HTML template. Number of "infinite-wrapper" elements not equal number of "infinite-scroll" elements. Read documentation on https://github.com/froncubator/froncubator-infinite-scroll.js')
